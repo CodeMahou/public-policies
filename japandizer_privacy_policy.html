@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Japandizer Privacy Policy | سياسة الخصوصية لتطبيق Japandizer</title>
+  <title>Japandizer Privacy Policy | سياسة الخصوصية لتطبيق جاباندايزر</title>
   <style>
     :root {
       --primary: #e11d48;
@@ -23,7 +23,7 @@
       line-height: 1.75;
     }
     header {
-      background: linear-gradient(135deg, #1a1d2e, var(--primary-dark), var(--primary));
+      background: linear-gradient(135deg, #1e1b4b, var(--primary-dark), var(--primary));
       color: #fff;
       padding: 40px 20px;
       text-align: center;
@@ -51,7 +51,8 @@
     }
     h3 { color: var(--primary); margin-bottom: 6px; }
     ul { padding-inline-start: 22px; }
-    li { margin-bottom: 6px; }
+    a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    a:hover { text-decoration: underline; }
     .en-section { direction: ltr; text-align: left; }
     .badge {
       display: inline-block;
@@ -63,8 +64,6 @@
       font-weight: 700;
       margin-bottom: 12px;
     }
-    a { color: var(--primary); text-decoration: none; font-weight: 600; }
-    a:hover { text-decoration: underline; }
     footer {
       text-align: center;
       color: var(--muted);
@@ -85,108 +84,101 @@
       <span class="badge">النسخة العربية</span>
       <h2>سياسة الخصوصية لتطبيق Japandizer (`com.codemahou.japandizer`)</h2>
       <p>
-        قام استوديو <strong>Code Mahou</strong> بتطوير تطبيق <strong>Japandizer: Learn Easy Japanese</strong> كتطبيق تعليمي مجاني لتعلم اللغة اليابانية (الهيراغانا، الكاتاكانا، الكانجي، والمفردات اليومية). توضح سياسة الخصوصية هذه كيفية تعامل التطبيق مع البيانات والصلاحيات عند استخدامك للخدمة.
+        طور استوديو <strong>Code Mahou</strong> تطبيق <strong>Japandizer: Learn Easy Japanese</strong> كتطبيق تعليمي مجاني لتعلم اللغة اليابانية (الهيراغانا، الكاتاكانا، الكانجي، والمفردات اليومية). توضح هذه الوثيقة كيفية تعامل التطبيق مع البيانات والصلاحيات التزاماً بسياسات متجر Google Play.
       </p>
 
-      <h3>1. التخزين المحلي لبيانات التعلم والتقدم (100% Local Learning Data)</h3>
+      <h3>1. عدم اشتراط إنشاء حساب والتخزين المحلي (Local-First Storage)</h3>
       <ul>
-        <li>لا يتطلب التطبيق إنشاء حساب مستخدم أو إدخال أي بيانات شخصية مباشرة (مثل الاسم أو البريد الإلكتروني أو رقم الهاتف أو الموقع الجغرافي الدقيق).</li>
-        <li>جميع بيانات تقدمك الدراسي (نقاط الخبرة <code>XP</code>، المستوى <code>Level</code>، أيام المواظبة <code>Daily Streak</code>، الحروف والكانجي المتقنة، قائمة المفضلة، ونتائج الاختبارات) تُحفظ <strong>محلياً داخل جهازك فقط</strong> عبر <code>SharedPreferences</code> وقاعدة بيانات SQLite المحلية غير المتصلة بالإنترنت.</li>
-        <li>تعمل ميزة التدرب على رسم الكانجي والحروف (Handwriting Pad) وميزة النطق الصوتي الياباني (Text-To-Speech) محلياً بالكامل على جهازك دون إرسال أي رسومات أو تسجيلات صوتية إلى أي خادم خارجي.</li>
+        <li>لا يطلب التطبيق منك إنشاء حساب مستخدم أو إدخال أي بيانات شخصية مباشرة (مثل الاسم أو البريد الإلكتروني أو رقم الهاتف).</li>
+        <li>جميع بيانات تقدمك الدراسي، نقاط الخبرة (<code>XP</code>)، المستويات، سلسلة المواظبة اليومية (<code>Daily Streak</code>)، الحروف المتقنة، قائمة الكانجي المفضلة، وإعدادات الدروس تُحفظ <strong>محلياً داخل جهازك فقط</strong> عبر <code>SharedPreferences</code> وقاعدة بيانات SQLite المدمجة.</li>
       </ul>
 
-      <h3>2. خدمات الأطراف الثالثة والبيانات التي تُجمع تلقائياً</h3>
-      <p>
-        لتقديم التطبيق مجاناً وتحسين استقراره وإرسال التنبيهات التعليمية، يعتمد التطبيق على حزم تطوير البرمجيات الرسمية من Google (<strong>Google Play Services</strong>، <strong>Google AdMob</strong>، <strong>Google Analytics for Firebase</strong>، و<strong>Firebase Cloud Messaging</strong>)، والتي قد تجمع تلقائياً البيانات التالية:
-      </p>
+      <h3>2. الصلاحيات التي يستخدمها التطبيق والغرض منها</h3>
       <ul>
-        <li><strong>معرّفات الجهاز (Device or Other IDs):</strong> تشمل معرّف الإعلانات الخاص بنظام أندرويد (Google Advertising ID - <code>AAID</code>) ومعرّف تثبيت Firebase (<code>Firebase Installation ID / FCM Token</code>) لأغراض عرض الإعلانات، الإحصائيات، وإرسال الإشعارات.</li>
-        <li><strong>الموقع التقريبي (Approximate Location):</strong> يُستنتج تلقائياً من عنوان الـ IP بواسطة خدمات الإعلانات والتحليلات لتقديم إعلانات ملائمة جغرافياً (لا يطلب التطبيق صلاحية الـ GPS على الإطلاق).</li>
-        <li><strong>نشاط التطبيق والتفاعلات (App Activity &amp; Interactions):</strong> عدد مرات فتح التطبيق، الشاشات التي تمت زيارتها، والتفاعل مع الإعلانات المعروضة داخل التطبيق.</li>
-        <li><strong>معلومات الأداء والأعطال (App Info &amp; Performance):</strong> سجلات الأعطال التقنية (Crash Logs) وبيانات تشخيص الأداء لضمان استقرار التطبيق على مختلف إصدارات أندرويد.</li>
+        <li><strong>الاتصال بالإنترنت (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> لتحميل الإعلانات عبر شبكة Google AdMob واستقبال التنبيهات التعليمية في حال توفر اتصال بالإنترنت (علماً بأن جميع دروس الهيراغانا والكاتاكانا والكانجي والملفات الصوتية ولوحة الرسم تعمل بالكامل بدون إنترنت).</li>
+        <li><strong>معرّف الإعلانات (<code>com.google.android.gms.permission.AD_ID</code>):</strong> يُستخدم بواسطة حزمة تطوير Google Mobile Ads SDK (AdMob) لعرض الإعلانات ومكافحة الاحتيال وتحليل أداء الإعلانات.</li>
+        <li><strong>الإشعارات (<code>android.permission.POST_NOTIFICATIONS</code>):</strong> صلاحية اختيارية في نظام Android 13 فما فوق لإرسال تنبيهات تعليمية وتحديثات عبر خدمة Firebase Cloud Messaging، ويمكنك إيقافها في أي وقت من إعدادات الهاتف.</li>
       </ul>
 
-      <h3>3. الصلاحيات التي يستخدمها التطبيق</h3>
+      <h3>3. خدمات الأطراف الثالثة (Google AdMob &amp; Firebase)</h3>
+      <p>يعتمد التطبيق على خدمات رسمية موثوقة من شركة Google قد تجمع تلقائياً بعض معرّفات الجهاز وبيانات الاستخدام والتشخيص:</p>
       <ul>
-        <li><strong>الإنترنت وحالة الشبكة (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> لتحميل وحدات الإعلانات من Google AdMob واستقبال الإشعارات عبر Firebase.</li>
-        <li><strong>معرّف الإعلانات (<code>com.google.android.gms.permission.AD_ID</code>):</strong> تُستخدم بواسطة حزمة Google Mobile Ads SDK لعرض الإعلانات ومنع الاحتيال الإعلاني وفق سياسات Google Play.</li>
-        <li><strong>الإشعارات (<code>POST_NOTIFICATIONS</code> على Android 13+):</strong> صلاحية اختيارية لإرسال تنبيهات تذكيرية وتحديثات تعليمية. يمكنك إيقاف الإشعارات في أي وقت من إعدادات الهاتف.</li>
+        <li><strong>إعلانات Google AdMob:</strong> يعرض التطبيق إعلانات (Banner، Interstitial، Native، Rewarded، و App Open) لدعم استمرارية التطبيق مجاناً. قد تستخدم Google معرّف الإعلانات الخاص بالجهاز (Advertising ID) والموقع التقريبي (المستنتج من عنوان الـ IP) وتفاعلات الإعلانات لتقديم إعلانات ملائمة ومصنفة بما يناسب المحتوى التعليمي.</li>
+        <li><strong>تحليلات وإشعارات Firebase (Firebase Analytics &amp; Cloud Messaging):</strong> تُستخدم لتحليل استقرار التطبيق، إحصائيات الشاشات العامة، وإرسال الإشعارات، وذلك باستخدام معرّفات تثبيت التطبيق (Firebase Installation ID).</li>
+        <li>روابط سياسات الخصوصية الرسمية لمزودي الخدمة:
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google Play Services &amp; Google</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">معلومات خصوصية Google AdMob</a></li>
+            <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">سياسة خصوصية Google Analytics for Firebase</a></li>
+          </ul>
+        </li>
       </ul>
 
-      <h3>4. أمان البيانات والتحكم في الخصوصية وحذف البيانات</h3>
+      <h3>4. أمان البيانات، التحكم في الإعلانات، وحذف البيانات</h3>
       <ul>
-        <li>جميع البيانات المرسلة بواسطة حزم Google الرسمية مشفرة أثناء النقل باستخدام بروتوكول <strong>HTTPS / TLS</strong>.</li>
-        <li>يمكنك في أي وقت إعادة تعيين معرّف الإعلانات الخاص بك أو إيقاف الإعلانات المخصصة من إعدادات جهازك: <strong>الإعدادات &gt; Google &gt; الإعلانات (Ads)</strong>.</li>
-        <li>يمكنك مسح كافة بيانات تقدمك المحلي والمفضلة في أي وقت عبر مسح بيانات التطبيق (Clear Storage) من إعدادات أندرويد أو إلغاء تثبيت التطبيق.</li>
+        <li><strong>التشفير أثناء النقل:</strong> جميع الاتصالات التي تجريها حزم Google AdMob و Firebase مشفرة بالكامل عبر بروتوكول الأمان <code>HTTPS / TLS</code>.</li>
+        <li><strong>التحكم في معرّف الإعلانات:</strong> يمكنك إعادة تعيين أو حذف معرّف الإعلانات (Advertising ID) أو إيقاف تخصيص الإعلانات في أي وقت من إعدادات هاتفك (الإعدادات &gt; Google &gt; الإعلانات).</li>
+        <li><strong>حذف البيانات المحلية:</strong> نظراً لأن كافة سجلات تعلمك والمفضلة محفوظة محلياً على هاتفك، يمكنك مسحها بالكامل في أي وقت من خلال "مسح بيانات التطبيق" في إعدادات نظام أندرويد أو بإلغاء تثبيت التطبيق.</li>
       </ul>
 
-      <h3>5. روابط سياسات الخصوصية لموفري الخدمات</h3>
+      <h3>5. خصوصية الأطفال والفئة العمرية</h3>
       <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية خدمات Google Play</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">سياسة Google AdMob والإعلانات</a></li>
-        <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">سياسة خصوصية Google Analytics for Firebase</a></li>
+        <li>التطبيق موجه لجمهور المتعلمين العام (من عمر 13 عاماً فأكثر) ولا يجمع عمداً أي معلومات تعريف شخصية من الأطفال دون سن 13 عاماً. كما يتم ضبط محتوى الإعلانات ليكون ملائماً للبيئة التعليمية.</li>
       </ul>
     </div>
 
     <!-- ENGLISH SECTION -->
-    <div class="card en-section" dir="ltr" lang="en">
+    <div class="card en-section" dir="ltr">
       <span class="badge">English Version</span>
       <h2>Privacy Policy for Japandizer (`com.codemahou.japandizer`)</h2>
       <p>
-        <strong>Code Mahou</strong> built the <strong>Japandizer: Learn Easy Japanese</strong> app as a free educational application. This Service is provided by Code Mahou at no cost and is intended for use as is. This Privacy Policy informs users regarding our policies on the collection, use, and disclosure of information when using the application.
+        <strong>Code Mahou</strong> built the <strong>Japandizer: Learn Easy Japanese</strong> app as a free educational application. This Privacy Policy informs users regarding our policies with the collection, use, and disclosure of information when using the App.
       </p>
 
-      <h3>1. Local-First Learning Data &amp; On-Device Processing</h3>
+      <h3>1. No Account Required &amp; Local-First Learning Storage</h3>
       <ul>
-        <li><strong>No Account Required:</strong> Japandizer does not require you to register an account or provide personally identifiable information (such as your name, email address, phone number, or precise GPS location).</li>
-        <li><strong>100% Local Progress Storage:</strong> All learning data—including your Experience Points (<code>XP</code>), Level, Daily Streak, mastered Hiragana/Katakana/Kanji characters, saved favorites, and quiz scores—is stored strictly locally on your device via Android <code>SharedPreferences</code> and an offline bundled SQLite database.</li>
-        <li><strong>On-Device Handwriting &amp; Audio:</strong> The interactive character drawing pad and Japanese pronunciation (Text-to-Speech &amp; bundled audio) run strictly on your device. No handwriting strokes or voice recordings are ever transmitted externally.</li>
+        <li><strong>Japandizer</strong> does not require you to register an account or provide any personally identifiable information (such as your name, email address, phone number, or precise GPS location).</li>
+        <li>All of your study progress—including XP points, user rank, daily study streaks, mastered Hiragana/Katakana/Kanji characters, saved favorites, handwriting practice, and quiz scores—is stored <strong>100% locally on your device</strong> via Android <code>SharedPreferences</code> and an embedded offline SQLite database.</li>
       </ul>
 
-      <h3>2. Third-Party Services &amp; Automatically Collected Data</h3>
-      <p>
-        To keep Japandizer free and continuously improve app stability, the app integrates official third-party SDKs provided by Google (<strong>Google Play Services</strong>, <strong>Google Mobile Ads SDK / AdMob</strong>, <strong>Google Analytics for Firebase</strong>, and <strong>Firebase Cloud Messaging</strong>). These SDKs may automatically collect and share the following data types for advertising, analytics, push notifications, and fraud prevention:
-      </p>
+      <h3>2. Permissions &amp; Device Identifiers Used</h3>
       <ul>
-        <li><strong>Device or Other IDs:</strong> Your device's Google Advertising ID (<code>AAID</code>) and Firebase Installation ID / FCM registration token.</li>
-        <li><strong>Approximate Location:</strong> Coarse geographic region inferred from your IP address by Google's advertising and analytics services (the app never requests GPS location permissions).</li>
-        <li><strong>App Activity &amp; Interactions:</strong> App launches, screen views, and interactions with in-app advertisements (Banner, Interstitial, Native, App Open, and optional Rewarded ads).</li>
-        <li><strong>App Info &amp; Performance:</strong> Crash logs, ANR diagnostics, and technical performance metrics.</li>
+        <li><strong>Internet &amp; Network State (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Used to load advertisements via Google AdMob and receive optional Firebase notifications. Core Japanese lessons, audio pronunciations, handwriting practice pads, and quizzes work offline.</li>
+        <li><strong>Advertising ID (<code>com.google.android.gms.permission.AD_ID</code>):</strong> Used by the Google Mobile Ads SDK (AdMob) to serve ads, enforce frequency capping, measure ad performance, and prevent fraud.</li>
+        <li><strong>Push Notifications (<code>android.permission.POST_NOTIFICATIONS</code>):</strong> Optional runtime permission on Android 13+ used by Firebase Cloud Messaging to deliver study reminders or app updates. You may grant or revoke this permission at any time in your device settings.</li>
       </ul>
 
-      <h3>3. App Permissions</h3>
+      <h3>3. Third-Party Services (Google AdMob &amp; Firebase)</h3>
+      <p>The App integrates official Google SDKs that automatically collect certain non-personal device identifiers and diagnostic data:</p>
       <ul>
-        <li><strong>Internet &amp; Network State (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>):</strong> Required to load advertisements via Google AdMob and receive Firebase Cloud Messaging notifications.</li>
-        <li><strong>Advertising ID (<code>com.google.android.gms.permission.AD_ID</code>):</strong> Used by Google Mobile Ads SDK to serve ads, enforce frequency caps, and prevent fraud.</li>
-        <li><strong>Notifications (<code>POST_NOTIFICATIONS</code> on Android 13+):</strong> Optional runtime permission to deliver study reminders and updates. You can revoke this permission anytime in your device settings.</li>
+        <li><strong>Google AdMob (Google Mobile Ads SDK):</strong> Collects your device's Advertising ID (AAID), coarse location (inferred from IP address), device model/OS version, and ad interaction events to serve Banner, Interstitial, Native, Rewarded (e.g., 50:50 Quiz Hints and 2x XP bonuses), and App Open advertisements. Ad content ratings are restricted to family/educational-friendly levels (PG).</li>
+        <li><strong>Google Analytics for Firebase &amp; Firebase Cloud Messaging (FCM):</strong> Collects Firebase Installation IDs, FCM registration tokens, app launch/screen events, and crash diagnostics to help us maintain stability and reliability.</li>
+        <li>Third-party privacy policies:
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services &amp; Google Privacy Policy</a></li>
+            <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener">Google AdMob &amp; AdSense Privacy Information</a></li>
+            <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Google Analytics for Firebase Policy</a></li>
+          </ul>
+        </li>
       </ul>
 
       <h3>4. Data Security, User Controls &amp; Data Deletion</h3>
       <ul>
-        <li>All data transmitted by integrated Google SDKs is encrypted in transit using industry-standard <strong>HTTPS / TLS</strong>.</li>
-        <li>You can reset or delete your Advertising ID or opt out of personalized advertising at any time in your Android Settings (<strong>Settings &gt; Google &gt; Ads</strong>).</li>
-        <li>Because all personal learning progress is stored locally on your device, you can permanently delete all app data at any time by clearing the app's storage in Android Settings or uninstalling the application.</li>
+        <li><strong>Encryption in Transit:</strong> All data transmitted by the integrated Google AdMob and Firebase SDKs is encrypted in transit using industry-standard <code>HTTPS / TLS</code>.</li>
+        <li><strong>Advertising ID Controls:</strong> You can reset or delete your Advertising ID or opt out of personalized advertising at any time via your Android device settings (<em>Settings &gt; Google &gt; Ads</em>). Users in the EEA/UK are also presented with consent choices via Google's User Messaging Platform (UMP).</li>
+        <li><strong>Data Deletion:</strong> Because we do not operate external user accounts or store personal learning records on external servers, you can permanently delete all local app data at any time by clearing the app's storage in Android Settings or uninstalling the App.</li>
       </ul>
 
-      <h3>5. Children's Privacy</h3>
-      <p>
-        These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.
-      </p>
-
-      <h3>6. Third-Party Privacy Policies &amp; Contact Us</h3>
+      <h3>5. Children's Privacy &amp; Contact Us</h3>
       <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services Privacy Policy</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener">Google AdMob &amp; AdSense Policy</a></li>
-        <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Google Analytics for Firebase &amp; FCM Policy</a></li>
+        <li>These Services do not knowingly collect personally identifiable information from children under the age of 13.</li>
+        <li>If you have any questions or suggestions about our Privacy Policy, please contact <strong>Code Mahou</strong> at <a href="mailto:world.nice44@gmail.com">world.nice44@gmail.com</a> or visit <a href="https://codemahou.github.io" target="_blank" rel="noopener">https://codemahou.github.io</a>.</li>
       </ul>
-      <p>
-        If you have any questions or suggestions about our Privacy Policy, please contact us at <a href="mailto:world.nice44@gmail.com">world.nice44@gmail.com</a>.
-      </p>
     </div>
   </div>
 
   <footer>
-    &copy; 2026 Code Mahou • Japandizer (`com.codemahou.japandizer`). All rights reserved.
+    &copy; 2026 Code Mahou — Japandizer (`com.codemahou.japandizer`). All rights reserved.
   </footer>
 </body>
 </html>
